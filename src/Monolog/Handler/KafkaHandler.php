@@ -63,7 +63,7 @@ class KafkaHandler extends AbstractProcessingHandler
     protected function write(array $record)
     {
         $data = (string)$record['formatted'];
-        $this->topic->produce(RD_KAFKA_PARTITION_UA, 1, $data);
+        $this->topic->produce(RD_KAFKA_PARTITION_UA, 0, $data);
 
         while ($this->producer->getOutQLen() > 0) {
             $this->producer->poll(0);
