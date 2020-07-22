@@ -1,5 +1,5 @@
 {
-    "name": "kozlice/monolog-kafka",
+    "name": "stseira/monolog-kafka",
     "description": "Apache Kafka handler for Monolog",
     "keywords": ["log", "logging", "psr-3", "kafka", "apache kafka"],
     "homepage": "http://github.com/kozlice/monolog-kafka",
